@@ -23,7 +23,7 @@ endef
 
 define Package/prometheus-node-exporter-lua
   $(call Package/prometheus-node-exporter-lua/Default)
-  DEPENDS:=+luasocket +lua +uhttpd +uhttpd-mod-lua
+  DEPENDS:=+luasocket +lua +uhttpd +uhttpd-mod-lua +libubus-lua
 endef
 
 define Package/prometheus-node-exporter-lua/install
